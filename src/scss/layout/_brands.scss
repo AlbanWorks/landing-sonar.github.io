@@ -1,0 +1,36 @@
+
+
+.brandsContainer{
+ background-color: rgb(240, 240, 240);
+ min-height: 220px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: space-around;
+}
+.brandsTitle{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.brandsImg{
+    height: 70px;
+}
+
+@media (max-width: 600px) {
+    .staffContainer{
+        height: auto;
+       flex-direction: column;
+       }
+}
+
+
+
+
