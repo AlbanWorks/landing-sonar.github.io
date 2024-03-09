@@ -1,17 +1,16 @@
 
 
 .brandsContainer{
- background-color: rgb(240, 240, 240);
  min-height: 220px;
  display: flex;
  align-items: center;
  flex-direction: column;
  justify-content: space-around;
+ margin: 120px 40px;
 }
 .brandsTitle{
-    margin: 0;
-    margin-bottom: 15px;
     font-size: 1.5em;
+    margin: 0 0 60px 0;
 }
 .brands{
     display: flex;
@@ -21,7 +20,8 @@
     flex-wrap: wrap;
 }
 .brandsImg{
-    height: 70px;
+    height: 50px;
+    margin: 20px;
 }
 
 @media (max-width: 600px) {

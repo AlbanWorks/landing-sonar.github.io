@@ -4,32 +4,22 @@
    height="318"
    version="1.1"
    id="svg36"
-   sodipodi:docname="hero-bg-top.svg"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview38"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="1.575"
-     inkscape:cx="1008.254"
-     inkscape:cy="143.49206"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g34" />
   <defs
      id="defs26">
+    <linearGradient
+       id="linearGradient1979">
+      <stop
+         style="stop-color:#1c1c39;stop-opacity:1;"
+         offset="0"
+         id="stop1975" />
+      <stop
+         style="stop-color:#1c1c39;stop-opacity:0;"
+         offset="1"
+         id="stop1977" />
+    </linearGradient>
     <linearGradient
        x1="38.706%"
        y1="-187.115%"
@@ -47,11 +37,13 @@
          id="stop4" />
     </linearGradient>
     <linearGradient
-       x1="50%"
-       y1="0%"
-       x2="50%"
-       y2="100%"
-       id="c">
+       x1="0.5"
+       y1="0"
+       x2="0.5"
+       y2="1"
+       id="c"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad">
       <stop
          stop-color="#606483"
          stop-opacity="0"
@@ -64,11 +56,13 @@
          id="stop9" />
     </linearGradient>
     <linearGradient
-       x1="50%"
-       y1="0%"
-       x2="39.334%"
-       y2="79.282%"
-       id="d">
+       x1="0.5"
+       y1="0"
+       x2="0.39333999"
+       y2="0.79281998"
+       id="d"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad">
       <stop
          stop-color="#0B0D19"
          stop-opacity=".32"
@@ -114,6 +108,22 @@
          in2="SourceGraphic"
          id="feBlend23" />
     </filter>
+    <linearGradient
+       xlink:href="#linearGradient1979"
+       id="linearGradient1981"
+       x1="1256.4037"
+       y1="68.385621"
+       x2="1497.2623"
+       y2="68.385621"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient1979"
+       id="linearGradient1985"
+       x1="596.08453"
+       y1="214.71756"
+       x2="-46.990768"
+       y2="197.64574"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      fill="none"
@@ -124,17 +134,17 @@
        transform="translate(1051)"
        fill="url(#a)"
        filter="url(#b)"
-       id="path28"
-       sodipodi:nodetypes="cc" />
+       id="path28" />
     <path
        d="M250.464 367.471c101.27 115.965 283.227-105.29 283.227-154.996 0-49.705-111.929-90-250-90s-250 40.295-250 90c0 49.706 115.503 39.032 216.773 154.996z"
        fill="url(#c)"
        transform="rotate(143 810.285 354.367)"
-       id="path30" />
+       id="path30"
+       style="fill-opacity:1;fill:url(#linearGradient1985)" />
     <path
-       d="M373.408 256.178c88.026 32.429 156-25.04 156-55.929 0-30.888-69.843-55.929-156-55.929-86.156 0-156 25.04-156 55.93 0 30.888 67.975 23.5 156 55.928z"
+       d="m 1339.6265,27.172234 c -85.8477,37.820528 -94.8228,126.378976 -73.3655,148.598666 21.4566,22.21896 89.0924,-8.28507 151.0686,-68.13475 61.9754,-59.848991 94.8227,-126.378979 73.3647,-148.599385 -21.4566,-22.218968 -65.2216,30.314917 -151.0678,68.135469 z"
        fill="url(#d)"
-       transform="rotate(136 905.21 332.676)"
-       id="path32" />
+       id="path32"
+       style="fill:url(#linearGradient1981);fill-opacity:1" />
   </g>
 </svg>

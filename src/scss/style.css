@@ -370,7 +370,7 @@ textarea {
 }
 
 a {
-  color: #2c2cb8;
+  color: #545875;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -672,7 +672,7 @@ label {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  color: #2c2cb8 !important;
+  color: #545875 !important;
   border: none;
   height: auto;
   left: 8px;
@@ -700,11 +700,11 @@ label {
 }
 
 .text-primary {
-  color: #2c2cb8;
+  color: #545875;
 }
 
 .text-secondary {
-  color: #db5b42;
+  color: white;
 }
 
 .has-top-divider {
@@ -1113,7 +1113,7 @@ label {
   text-transform: uppercase;
   background-color: #FFFFFF;
   background: #FFFFFF;
-  color: #2c2cb8 !important;
+  color: #545875 !important;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -1166,41 +1166,41 @@ label {
 }
 
 .button-primary {
-  background: #2c2cb8;
+  background: #545875;
 }
 .button-primary:hover {
-  background: #2e2ec0;
+  background: #585c7b;
 }
 .button-primary.button-shadow::before {
-  box-shadow: 0 8px 16px rgba(44, 44, 184, 0.24);
+  box-shadow: 0 8px 16px rgba(84, 88, 117, 0.24);
 }
 .button-primary.button-shadow:hover::before {
-  box-shadow: 0 8px 16px rgba(44, 44, 184, 0.32);
+  box-shadow: 0 8px 16px rgba(84, 88, 117, 0.32);
 }
 .button-primary .button-sm.button-shadow::before {
-  box-shadow: 0 4px 16px rgba(44, 44, 184, 0.24);
+  box-shadow: 0 4px 16px rgba(84, 88, 117, 0.24);
 }
 .button-primary .button-sm.button-shadow:hover::before {
-  box-shadow: 0 4px 16px rgba(44, 44, 184, 0.32);
+  box-shadow: 0 4px 16px rgba(84, 88, 117, 0.32);
 }
 
 .button-secondary {
-  background: #db5b42;
+  background: white;
 }
 .button-secondary:hover {
-  background: #dd664f;
+  background: white;
 }
 .button-secondary.button-shadow::before {
-  box-shadow: 0 8px 16px rgba(219, 91, 66, 0.24);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.24);
 }
 .button-secondary.button-shadow:hover::before {
-  box-shadow: 0 8px 16px rgba(219, 91, 66, 0.32);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.32);
 }
 .button-secondary .button-sm.button-shadow::before {
-  box-shadow: 0 4px 16px rgba(219, 91, 66, 0.24);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.24);
 }
 .button-secondary .button-sm.button-shadow:hover::before {
-  box-shadow: 0 4px 16px rgba(219, 91, 66, 0.32);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.32);
 }
 
 .button-block {
@@ -1270,7 +1270,7 @@ label {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #0B0D19;
+  background: #22224A;
   z-index: -2;
 }
 .hero .hero-particles-container {
@@ -1414,24 +1414,40 @@ label {
 # Staff
 --------------------------------------------------------------*/
 .staffContainer {
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 120px;
 }
 
 .staff {
   padding: 10px;
+  width: 250px;
+  height: 365px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #323844;
+}
+
+.staffDescription {
+  color: #6B7A90;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.staffTitle {
+  color: #323844;
 }
 
 .staffImg {
   border-radius: 50%;
   width: 170px;
   height: 170px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 @media (max-width: 600px) {
@@ -1448,18 +1464,17 @@ label {
 # Brands
 --------------------------------------------------------------*/
 .brandsContainer {
-  background-color: rgb(240, 240, 240);
   min-height: 220px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  margin: 120px 40px;
 }
 
 .brandsTitle {
-  margin: 0;
-  margin-bottom: 15px;
   font-size: 1.5em;
+  margin: 0 0 60px 0;
 }
 
 .brands {
@@ -1471,7 +1486,8 @@ label {
 }
 
 .brandsImg {
-  height: 70px;
+  height: 50px;
+  margin: 20px;
 }
 
 @media (max-width: 600px) {
@@ -1693,7 +1709,7 @@ main {
 --------------------------------------------------------------*/
 .site-footer {
   position: relative;
-  background: #0B0D19;
+  background: #22224A;
 }
 .site-footer::before {
   content: "";
@@ -1744,7 +1760,7 @@ main {
   width: 100%;
   display: block;
   height: 1px;
-  background: #1E233D;
+  background: #22224A;
 }
 
 .footer-brand,

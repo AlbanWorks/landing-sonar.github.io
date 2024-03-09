@@ -76,7 +76,7 @@
 
   Bubble.prototype.randomise = function () {
     let self = this
-    self.colors = ['85,107,139', '38,141,247', '66,52,248', '255,108,80', '243, 244, 255', '96, 100, 131']
+    self.colors = ['white', '#FCF1F7', '#FCF1F7', 'white', '#FCF1F7', 'white']
     self.velocity = 30 // Bubble levitation velocity (the higher the slower)
     self.smoothFactor = 50 // The higher, the smoother
     self.staticity = 30 // Increase value to make bubbles move slower on mousemove
@@ -136,7 +136,7 @@
       self.ctx.translate(bubble.translateX, bubble.translateY)
       self.ctx.beginPath()
       self.ctx.arc(bubble.posX, bubble.posY, bubble.size, 0, 2 * Math.PI)
-      self.ctx.fillStyle = 'rgba(' + bubble.color + ',' + bubble.alpha + ')'
+      self.ctx.fillStyle = bubble.color
       self.ctx.fill()
       self.ctx.setTransform(self.dpr, 0, 0, self.dpr, 0, 0)
     })
