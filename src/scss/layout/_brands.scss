@@ -1,36 +1,52 @@
 
-
-.brandsContainer{
- min-height: 220px;
- display: flex;
- align-items: center;
- flex-direction: column;
- justify-content: space-around;
- margin: 120px 40px;
-}
 .brandsTitle{
     font-size: 1.5em;
-    margin: 0 0 60px 0;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
 }
-.brands{
+.brands_container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
 }
-.brandsImg{
-    height: 50px;
-    margin: 20px;
+.brands{
+    width: 400px;
+    height: 77px; /* Ajusta según sea necesario */
+    overflow: hidden;
+    position: relative; /* Asegura que el posicionamiento relativo de la imagen funcione correctamente */ 
+}
+.brands_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: panearImagen 10s linear infinite;
+}
+@keyframes panearImagen {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -550%; /* Desplaza la imagen completamente fuera del contenedor */
+    }
 }
 
-@media (max-width: 600px) {
-    .staffContainer{
-        height: auto;
-       flex-direction: column;
-       }
+@media only screen and (min-width: 750px) {
+    .brands{
+        width: 700px;
+    }
+    @keyframes panearImagen {
+        from {
+          left: 100%;
+        }
+        to {
+          left: -240%; /* Desplaza la imagen completamente fuera del contenedor */
+        }
+    }
 }
-
-
 
 
