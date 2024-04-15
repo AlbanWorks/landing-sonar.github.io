@@ -1,17 +1,17 @@
 .gallery {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     padding: 60px 10px;
   }
   
   .image {
+    width: 300px;
     height: 300px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
   }
   
   .image img {
@@ -21,7 +21,22 @@
     object-fit: cover;
     transition: transform 0.3s ease;
   }
-  
   .image img:hover {
     transform: scale(1.1);
+  }
+
+  @media only screen and (min-width: 700px) {
+    .gallery {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1px;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: auto;
+        height: auto;
+        margin-bottom: 0;
+      }
   }
