@@ -1513,15 +1513,19 @@ label {
 --------------------------------------------------------------*/
 .gallery {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  flex-wrap: wrap;
   align-items: center;
   padding: 60px 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  width: 300px;
-  height: 300px;
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  min-height: 160px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1px;
@@ -1551,6 +1555,8 @@ label {
   .image {
     width: auto;
     height: auto;
+    min-height: unset;
+    min-width: unset;
     margin-bottom: 0;
   }
 }
